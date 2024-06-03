@@ -1,0 +1,6 @@
+@import url(./charte.css);
+
+h1 {
+    color: var(--jaune);
+    font-family: "Montserrat", sans-serif;
+}
