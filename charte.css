@@ -4,11 +4,13 @@
 /*police texte  "Open Sans", sans-serif*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 :root {
     --blanc: #FFFFFF ;
     --jaune: #FAB637;
     --rouge: #FF4848;
-    --marron: #CC6119;
+    --orange: #CC6119;
     --gris: #ECEFF3;
     --noir: #232628;
     --bleu: #6C98E1;
