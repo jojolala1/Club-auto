@@ -1,5 +1,21 @@
 @import url(./charte.css);
 
+body {
+    color: var(--noir);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p, a, ul, button {
+    font-family: "Open Sans", sans-serif;
+}
+
+section {
+    display: flex;
+}
+
 header {
     display: grid;
     grid-template-rows: 1fr 1.5fr 2.5fr;
@@ -7,10 +23,10 @@ header {
     "burger"
     "phone"
     "title";
-    position: fixed;
+    position: relative;
     width: 100%;
     background: var(--noir);
-    height: 450px;
+    height: 420px;
     font-family: "Montserrat", sans-serif;
     color: var(--blanc);
 }
@@ -58,6 +74,7 @@ header a {
 }
 
 .titles {
+    margin-top: -20px;
     grid-area: title;
     text-transform: uppercase;
     font-size: 2.9rem;
@@ -72,4 +89,232 @@ header a {
 
 .title-orange {
     color:var(--orange);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-white {
+    margin: 50px 10vw;
+}
+
+img{
+    width: 80vw;
+    height: auto;
+    align-self: center;
+    margin-top: 60px;
+}
+
+.h2-title {
+    
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin:  30px 0;
+    line-height: 2rem;
+}
+
+.p-bold {
+    font-size: 1.3rem;
+    font-weight: 750;
+    line-height: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.p-fin, ol {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.hr-gris {
+    height: 2px;
+    border: none;
+    text-decoration: none;
+    background-color: var(--gris);
+    width: 80vw;
+    margin-bottom: 30px;
+}
+
+.claire {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.bi-check{
+    color: var(--orange);
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+li{
+    margin: 15px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.sec-fond {
+    background: no-repeat url(./images/img-fond.jpg);
+    padding: 10px 0 10px 0 ;
+}
+
+.sec-fond img {
+    height: 100%;
+}
+
+.sec-color{
+    margin: 40px 0;
+    padding: 50px 130px 50px 90px;
+}
+
+.sec-jaune {
+    background: var(--jauneTrans);
+}
+
+.sec-rouge {
+    background: var(--rougeTrans);
+}
+
+.h3-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.p-white{
+    color: var(--blanc);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.sec-recent {
+    background: var(--noir);
+    padding-bottom: 40px;
+
+}
+
+.white {
+    color: var(--blanc);
+}
+
+.title-recent {
+    margin: 80px 0 15px 0;
+    text-align: center;
+}
+
+.sec-recent img {
+    width: 90vw;
+    margin-top: 40px;
+}
+
+.hr-orange{
+    width: 90vw;
+    height: 4px;
+    border: none;
+    background: var(--orange);
+}
+
+.card-rec {
+    background: rgb(73, 73, 73);
+    color: var(--blanc);
+    margin: 5vw;
+}
+
+.price{
+    margin:  20px 0 20px 50px;
+    padding: 15px;
+    background: var(--bleu);
+    width: 80px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.p-rec {
+    text-transform: uppercase;
+    margin: 30px;
+    font-size: 1.3rem;
+    font-weight:700 ;
+}
+
+.hr-gris {
+    border: none;
+    height: 0.5px;
+    background: var(--gris);
+}
+
+.h2-blackLower {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.little-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.valid {
+    color: var(--orange);
+    font-size: 4rem;
+    margin: 0 30px 0 0 ;
+}
+
+.title-avantages {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-right: 20%;
+}
+
+.claire-2{
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px 20px 20px 0;
+    margin-bottom: 50px;
+}
+
+.btn-blue {
+    width: min-content;
+    background: var(--bleu);
+    align-self: center;
+    color: var(--blanc);
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 60vw;
+    border-radius: 5px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.sec-fond2 {
+    padding: 50px 0;
+    background: no-repeat url(./images/vehicule3.jpg);
+    background-size: cover;
+
+}
+
+.sec-fond2 .sec-jaune {
+    padding: 50px 40px 50px 40px;
+}
+
+.sec-fond2 .h3-title {
+    text-transform: uppercase;
+    width: 50vw;
+    line-height: 2.5rem;
+}
+
+.sec-fond2 p {
+    color: var(--noir);
+}
+
+.footer {
+    background: var(--noir);
 }
