@@ -10,26 +10,101 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a, ul, button {
     font-family: "Open Sans", sans-serif;
+    text-decoration: none;
 }
 
+header {
+    background: var(--noir);
+}
+
+.navbar-collapse{
+    background: var(--blanc);
+}
+
+.white {
+    color: var(--blanc);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.noir {
+    color: var(--noir);
+}
+
+.blue {
+    color: var(--bleu);
+}
+
+.gris {
+    color: var(--gris);
+}
+
+header button {
+    color: var(--bleu);
+}
+
+.navbar-toggler-icon{
+    color: var(--bleu);
+}
+
+.navbar-toggler {
+    border: none; 
+    box-shadow: none;
+    background: transparent;
+}
+
+.navbar-toggler:focus {
+    outline: none; 
+    box-shadow: none; 
+}
+
+.plusvoit {
+    width: 100%;
+}
+
+.plusvoit-content {
+    height: 430px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.margintitle {
+    background: var(--noir);
+}
+
+
+.active-orange {
+    background: var(--orange);
+    color: var(--blanc);
+}
+
+
+@media screen and (min-width: 992px) {
+    .margintitle {
+        margin-top: 400px;
+        background: var(--noir);
+    }
+    main {
+        margin-top: 450px;
+    }
+    .margin-nav {
+        margin-top: 0;
+    }
+
+    .abso {
+        position: absolute;
+    }
+    }
+
+
+/* 
 section {
     display: flex;
 }
 
-header {
-    display: grid;
-    grid-template-rows: 1fr 1.5fr 2.5fr;
-    grid-template-areas:
-    "burger"
-    "phone"
-    "title";
-    position: relative;
-    width: 100%;
-    background: var(--noir);
-    height: 420px;
-    font-family: "Montserrat", sans-serif;
-    color: var(--blanc);
-}
+
 
 .bi-list {
     justify-self: end;
@@ -156,7 +231,7 @@ li{
     font-size: 1.1rem;
     font-weight: 500;
 }
-
+*/
 .sec-fond {
     background: no-repeat url(./images/img-fond.jpg);
     padding: 10px 0 10px 0 ;
@@ -178,7 +253,7 @@ li{
 .sec-rouge {
     background: var(--rougeTrans);
 }
-
+/*
 .h3-title {
     font-size: 2rem;
     font-weight: 800;
@@ -317,4 +392,98 @@ li{
 
 .footer {
     background: var(--noir);
+    padding: 20px;
 }
+
+.title-blue {
+    color: var(--bleu);
+}
+
+.h4-white{
+    color: var(--blanc);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 30px 0 20px 0;
+    font-weight: 800;
+}
+
+.dates {
+    padding: 0;
+    margin: 0;
+    color: gray;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+time{
+    color: var(--blanc);
+    font-weight: 300;
+}
+
+.copy{
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.footer-item3 {
+    width: 90vw;
+    position: relative;
+}
+
+#email {
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+form button {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-right: 5vw;
+    background: var(--orange);
+    border: none;
+
+}
+
+form input[type="email"] {
+    width: 85%;
+    box-sizing: border-box; 
+}
+
+.bi-wifi-2{
+    display: block;
+    color: var(--blanc);
+    font-size: 2.4rem;
+    transform: rotate(45deg);
+    text-align: center;
+    padding:  0  50px 0 0;
+}
+
+.footer hr {
+    width: 90vw;
+}
+
+.item4 {
+    padding-left: 0;
+}
+
+.item4 h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.btn-sociaux {
+    height: 60px;
+    width: 60px;
+    margin: 30px 5px 0 0;
+    background: rgb(77, 77, 77);
+}
+
+.btn-sociaux i {
+    font-size: 1.6rem;
+    color: var(--blanc);
+} */

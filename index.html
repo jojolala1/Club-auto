@@ -5,33 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ma description personnalisée">
     <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Club Auto</title>
 </head>
 <body>
-    <header>
-        <i class="bi bi-list"></i>
+    <header class="pb-4">
+            <div class="col-12 justify-content-between align-items-center  text-end ">
+                <button class="navbar-toggler d-lg-none m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list blue h1 align-items-center"></i>
+                </button>
+                <div class="header-num list-inline text-start offset-1 d-flex">
+                    <i class="bi bi-telephone-fill list-inline-item orange m-2 h4 "></i>
+                    <p class="list-inline-item orange text-uppercase fs-6">Téléphone:<br>
+                        <a href="tel:0123456789" class="num white ">01 23 45 67 89</a>
+                    </p>
+                </div>
+                
+            </div>
+        
+        <div >
+            <div class="col-12">
+                <picture class=" plusvoit-content abso col-12">
+                        <div class="col-12 ">
+                            <nav class="navbar navbar-expand-lg p-0 ">
+                                <div class="collapse navbar-collapse margin-nav justify-content-end " id="navbarNav">
+                                    <ul class="navbar-nav me-5 p-0">
+                                        <li class="nav-item ">
+                                            <a class="nav-link active-orange " aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item  mx-2">
+                                            <a class="nav-link" href="#">Features</a>
+                                        </li>
+                                        <li class="nav-item  mx-2">
+                                            <a class="nav-link" href="#">Pricing</a>
+                                        </li>
 
-        <div class="header-num">
-                <i class="bi bi-telephone-fill" ></i>
-            <p>Téléphone:<br>
-                <a href="tel:0123456789" class="num">01 23 45 67 89</a>
-            </p>
-        </div>
-        <div class="title-content">
-            <h1 class="titles">Club auto <span class="title-orange">le meilleur de l'automobile</span></h1>
+                                    </ul>
+                                </div>
+                            </nav>
+                    </div>
+                    <img src="./images/vehicule1.jpg" alt="plusieurs voitures" class="d-none d-lg-block img-fluid plusvoit ">
+                </picture>
+                
+                <div class="title-content abso margintitle col-12 ">
+                    <h1 class="titles fw-bold text-uppercase white mx-4 text-center">Club auto <span class="orange ">le meilleur de l'automobile</span></h1>
+                </div>
+            </div>
         </div>
     </header>
-    <main class="main">
-        <section class="sec-white" id="sec-first">
-            <img src="./images/clients.jpg" alt="deux personnes devant une voiture">
-            <h2 class="h2-title">Bienvenue chez <span class="title-orange">club auto</span></h2>
-            <p class="p-bold">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta voluptates nesciunt consequatur quis illo eveniet impedit 
-            </p>
-            <p class="p-fin">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, cum eum quidem est, veritatis quam sapiente nam quae suscipit debitis minima accusamus repellat tempore voluptates quod, et aut ex earum officiis illum perspiciatis ipsam aspernatur! Fuga, ipsam? Necessitatibus, facilis nulla incidunt dolorem nihil distinctio esse laudantium accusamus reprehenderit amet! Nostrum corrupti, autem sed incidunt assumenda quaerat molestiae ad? Dignissimos, ipsam.
-            </p>
+    
+    <main class="main container p-4 ">
+
+        <section class="sec-white row" id="sec-first">
+            <img src="./images/clients.jpg" alt="deux personnes devant une voiture" class="img-fluid col-12 col-lg-6 col-xl-5 offset-xl-1">
+            
+            <div class="col-12 col-lg-6 col-xl-5">
+                <h2 class="h2-title">Bienvenue chez <span class="title-orange">club auto</span></h2>
+                <p class="p-bold">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta voluptates nesciunt consequatur quis illo eveniet impedit 
+                </p>
+                <p class="p-fin">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, cum eum quidem est, veritatis quam sapiente nam quae suscipit debitis minima accusamus repellat tempore voluptates quod, et aut ex earum officiis illum perspiciatis ipsam aspernatur! Fuga, ipsam? Necessitatibus, facilis nulla incidunt dolorem nihil distinctio esse laudantium accusamus reprehenderit amet! Nostrum corrupti, autem sed incidunt assumenda quaerat molestiae ad? Dignissimos, ipsam.
+                </p>
+            </div>
         </section>
         <section class="sec-white">
             <h2 class="h2-title">Le meilleur de l'automobile</h2>
@@ -45,7 +83,7 @@
                 <li><i class="bi bi-check"></i>A praesentium facere neque </li>
                 <li><i class="bi bi-check"></i>Modi error aperiam sunt </li>
                 <li><i class="bi bi-check"></i>Qui repellendus iure dolores </li>
-                <img src="./images/entretien.jpg" alt="personne qui lave une voiture">
+                <img src="./images/entretien.jpg" alt="personne qui lave une voiture" class="img-fluid">
             </ul>
         </section>
         <div class="sec-fond">
@@ -65,7 +103,7 @@
         <section class="sec-recent">
             <h2 class="white titles title-recent">Vehicules recents</h2>
             <hr class="hr-orange">
-            <img src="./images/vehicule2.jpg" alt="vehicule récent">
+            <img src="./images/vehicule2.jpg" alt="vehicule récent" class="img-fluid">
             <div class="card-rec">
                 <p class="price">5 500€</p>
                 <p class="p-rec">bmw 535i, navi, leather, abs</p>
@@ -114,47 +152,47 @@
     </main>
     <footer class="footer">
         <section class="footer-item1">
-            <h4 class="h4-white"><span class="title-blue">club</span>Auto</h4>
-            <p class="p-fin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil facilis nostrum repellendus totam ipsa placeat maiores dolores doloribus aut!</p>
+            <h4 class="h4-white"><span class="title-blue">club</span> Auto</h4>
+            <p class="p-fin claire">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil facilis nostrum repellendus totam ipsa placeat maiores dolores doloribus aut!</p>
         </section>
         <section class="footer-item2">
             <h4 class="h4-white">Horaire d'ouverture</h4>
-            <p class="p-fin">lundi-samedi: <time datetime="09:00">09:00-</time><time datetime="17:00">17:00</time></p>
-            <p class="p-fin">dimanche et jours fériés: <time>Fermé</time></p>
+            <p class="p-fin  dates">lundi-samedi: <time datetime="09:00">09:00-</time><time datetime="17:00">17:00</time></p>
+            <p class="p-fin  dates">Dimanche et jours fériés: <time>Fermé</time></p>
         </section>
         <form action="./index.html" class="footer-item3">
                 <h4 class="h4-white">Newsletter</h4>
                 <input type="email" name="email" placeholder="Entrez votre email" id="email" required>
-                <button type="submit"></button>
-                <p class="p-fin">inscrivez-vous pour recevoir les dernières offres </p>
+                <button type="submit"><i class="bi bi-wifi-2"></i></button>
+                <p class="p-fin claire">inscrivez-vous pour recevoir les dernières offres </p>
         </form>
         <section class="footer item4">
             <h4 class="h4-white">Reseaux sociaux</h4>
             <nav class="sociaux">
                 <button class="btn-sociaux">
                     <a href="#"></a>
-                    <i></i>
+                    <i class="bi bi-facebook"></i>
                 </button>
                 <button class="btn-sociaux">
                     <a href="#"></a>
-                    <i></i>
+                    <i class="bi bi-twitter"></i>
                 </button>
                 <button class="btn-sociaux">
                     <a href="#"></a>
-                    <i></i>
+                    <i class="bi bi-instagram"></i>
                 </button>
                 <button class="btn-sociaux">
                     <a href="#"></a>
-                    <i></i>
+                    <i  class="bi bi-google"></i>
                 </button>
                 <button class="btn-sociaux">
                     <a href="#"></a>
-                    <i></i>
+                    <i class="bi bi-youtube"></i>
                 </button>
             </nav>
         </section>
-        <hr>
-        <p class="p-fin">copyright &copy Club Auto - tous droits réservés
+        <hr class="hr-gris">
+        <p class="p-fin claire copy">copyright &copy Club Auto - tous droits réservés
         </p>
     </footer>
 </body>
