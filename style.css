@@ -41,6 +41,23 @@ header {
     color: var(--gris);
 }
 
+.bg-noir {
+        background: var(--noir);
+}
+
+.bg-orange {
+    background: var(--orange);
+}
+
+.bg-bleu {
+    background: var(--bleu);
+}
+
+.bg-grisf {
+    background:rgb(87, 86, 86);
+}
+
+
 header button {
     color: var(--bleu);
 }
@@ -80,6 +97,21 @@ header button {
     color: var(--blanc);
 }
 
+
+.titles {
+    font-size: 2.4rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.custom-hr {
+    border: 0;
+    height: 2px;
+    background-color: #CC6119; /* Couleur personnalisée */
+    margin: 2rem 0; 
+}
 
 @media screen and (min-width: 992px) {
     .margintitle {
