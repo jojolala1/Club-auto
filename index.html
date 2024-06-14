@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">
+    
+    <html lang="fr" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,27 +11,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Club Auto</title>
 </head>
-<body>
-    <header class="pb-4">
+<body >
+    <header >
+        <button class="navbar-toggler d-lg-none burger position-absolute" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list blue h1 align-items-center"></i>
+        </button>
             <div class="col-12   d-flex p-lg-3 flex-column flex-lg-row justify-content-evenly">
-                <button class="navbar-toggler d-lg-none m-2 text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list blue h1 align-items-center"></i>
-                </button>
+                
                
-                <div class="  offset-1 d-lg-flex justify-content-lg-around "> <p class="d-none d-lg-inline h1 titles titles-lg fw-bold text-uppercase white me-3 align-self-center">Club auto</p>
+                <div class="  offset-1 d-lg-flex justify-content-lg-around mt-lg-0 margin-t"> <p class="d-none d-lg-inline h1 titles titles-lg fw-bold text-uppercase white me-3 align-self-center">Club auto</p>
                     <div class="d-none d-lg-block d-lg-flex me-3">
                         <i class="bi bi-geo-alt-fill  orange m-2 h4 "></i>
                         <p class=" list-inline-item orange text-uppercase m-0 very-litlle-size">Adresse:<br>
-                            <a href="Avenue Charles De Gaule 75000 Paris" class=" gris m-0 very-litlle-size">Avenue Charles De Gaule <br> 75000 Paris</a>
+                            <a href="https://maps.app.goo.gl/VGXjC1sDdxBgXzNKA" class=" gris m-0 very-litlle-size" target="_blank">Avenue Charles De Gaule <br> 75000 Paris</a>
                         </p>
                    
                         
                     </div>
-                    <i class="bi bi-telephone-fill  orange m-2 h4 "></i>
-                    <p class=" list-inline-item orange text-uppercase m-0 very-litlle-size">Téléphone:<br>
-                        <a href="tel:0123456789" class=" white litlle-size">01 23 45 67 89</a>
+                    <div class="d-flex">
+                        <i class="bi bi-telephone-fill  orange m-2 h4 "></i>
+                    <p class=" list-inline-item orange text-uppercase m-0 very-litlle-size bold">Téléphone:<br>
+                        <a href="tel:0123456789" class=" white h3 litlle-size bold">01 23 45 67 89</a>
                     </p>
 
+                    </div>
+                    
                     <div class="d-flex flex-column ms-4 very-litlle-size d-none d-lg-block">
                         <p class=" orange mb-0 text-uppercase">ouverture : <span class="white text-lowercase">Du lundi-samedi:</span> </p>
                         <p class="mb-0 orange text-uppercase">Horaires : <time class="white text-lowercase" datetime="09:00">De 09:00-</time><time class="white" datetime="17:00">17:00</time> </p>
@@ -51,42 +56,45 @@
         
         <div >
             <div class="col-12">
-                <picture class=" plusvoit-content abso col-12">
-                        <div class="col-12 ">
-                            <nav class="navbar navbar-expand-lg p-0 ">
-                                <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
-                                    <ul class="navbar-nav margin-nav p-0  col-12 col-lg-3 ">
-                                        <li class="nav-item">
-                                            <a class="nav-link active-orange " aria-current="page" href="#">Accueil</a>
-                                        </li>
-                                        <li class="nav-item  mx-2">
-                                            <a class="nav-link" href="#">Vente</a>
-                                        </li>
-                                        <li class="nav-item  mx-2">
-                                            <a class="nav-link" href="#">Location</a>
-                                        </li>
-                                        <li class="nav-item  mx-2">
-                                            <a class="nav-link" href="./contact.html">Contact</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </nav>
-                    </div>
-                    <img src="./images/vehicule1.jpg" alt="plusieurs voitures" class="plusvoit
-                    d-none d-lg-block img-fluid">
-                </picture>
+                
                 
                 <div class="title-content abso margintitle col-12 ">
-                    <h1 class="p-3 titles fw-bold text-uppercase white ms-lg-5 titles-lg text-center text-lg-start">Club auto <span class="orange ">le meilleur de l'automobile</span></h1>
+                    <h1 class="p-3 titles fw-bold mt-4 mt-lg-0 text-uppercase white ms-lg-5 titles-lg text-center text-lg-start">Club auto <span class="orange ">le meilleur de l'automobile</span></h1>
+
+                    
                 </div>
             </div>
         </div>
+        <picture class=" plusvoit-content abso col-12 ">
+            <div class="col-12 ">
+                <nav class="navbar navbar-expand-lg p-0 shadow-sm position-absolute w-100">
+                    <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
+                        <ul class="navbar-nav margin-nav p-0  col-12 col-lg-3 ">
+                            <li class="nav-item  mx-lg-2 mx-0">
+                                <a class="nav-link active-orange " aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item  mx-lg-2 mx-0">
+                                <a class="nav-link" href="./vehicule.html">Vente</a>
+                            </li>
+                            <li class="nav-item  mx-lg-2 mx-0">
+                                <a class="nav-link" href="#">Location</a>
+                            </li>
+                            <li class="nav-item  mx-lg-2 mx-0">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+        <img src="./images/vehicule1.jpg" style="background-position: start; " alt="plusieurs voitures" class="plusvoit
+        d-none d-lg-block img-fluid">
+    </picture>
     </header>
     
     <main class="main container-fluid p-0">
 
-        <section class=" row pt-5 pb-4 px-5 offset-lg-1  " id="sec-first">
+        <section class=" row pt-5 pb-4 px-5 offset-lg-1  " >
             <img src="./images/clients.jpg" alt="deux personnes devant une voiture" class="img-fluid col-lg-5  d-flex mb-lg-auto mb-4">
             
             <div class="col-12 col-lg-5 ">
@@ -117,7 +125,7 @@
            
             <img src="./images/entretien.jpg" alt="personne qui lave une voiture" class="img-fluid  col-lg-5  mt-4 mt-lg-0 mb-auto pe-5">
         </section>
-        <div class="sec-fond row d-flex justify-content-center p-lg-5">
+        <div class="sec-fond row d-flex justify-content-center p-lg-5 ">
             <section class="sec-color sec-jaune col-lg-5 mx-4 p-lg-5 ">
                 <h3 class=" bold ">Vous souhaitez louer ?</h3>
                 <p class="white litlle-size">
@@ -138,24 +146,24 @@
                 <div class="vehicule col-12 col-lg-6 col-xl-4 p-5 p-lg-2">
                     <img src="./images/vehicule2.jpg" alt="vehicule récent" class="img-fluid">
                     <div class="bg-grisf white p-3 mt-3 text-uppercase bold d-lg-flex flex-row-reverse">
-                        <p class=" h5 bg-bleu py-3 px-4 text-nowrap m-2 d-inline-block w-auto mb-4 bold height-price">5 500 €</p>
-                        <p class="p-rec">bmw 535i, navi, leather, abs</p>
+                        <a href="/vehicule.html" class=" h5 bg-bleu py-3 px-4 text-nowrap m-2 d-inline-block w-auto mb-4 bold height-price">5 500 €</a>
+                        <a href="/vehicule.html"  class=" white">bmw 535i, navi, leather, abs</a>
                         <hr class="hr-gris">
                     </div>
                 </div>
                 <div class="vehicule d-none d-lg-block col-lg-6 col-xl-4 p-5 p-lg-2">
                     <img src="./images/vehicule2.jpg" alt="vehicule récent" class="img-fluid">
                     <div class="bg-grisf white p-3 mt-3 text-uppercase bold d-lg-flex flex-row-reverse">
-                        <p class=" h5 bg-bleu py-3 px-4 text-nowrap m-2 d-inline-block w-auto mb-4 bold height-price">8 000 €</p>
-                        <p class="p-rec">bmw 3201, sport line body kit</p>
+                        <a class=" h5 bg-bleu py-3 px-4 text-nowrap m-2 d-inline-block w-auto mb-4 bold height-price" href="/vehicule.html">8 000 €</a>
+                        <a class="white" href="/vehicule.html">bmw 3201, sport line body kit</a>
                         <hr class="hr-gris">
                     </div>
                 </div>
                 <div class="vehicule  d-none d-xl-block  col-xl-4 p-5 p-lg-2">
                     <img src="./images/vehicule2.jpg" alt="vehicule récent" class="img-fluid">
                     <div class="bg-grisf white p-3 mt-3 text-uppercase bold d-lg-flex flex-row-reverse">
-                        <p class=" h5 bg-bleu py-2 px-4 text-nowrap m-2 d-inline-block w-auto mb-4 bold height-price "><span class="fw-light text-decoration-line-through noir">9 000 €</span><br>8 200 €</p>
-                        <p class="p-rec">ford explorer 2015 4wd</p>
+                        <a href="/vehicule.html" class=" h5 bg-bleu py-2 px-4 text-nowrap m-2 d-inline-block w-auto mb-4 bold height-price "><span class="fw-light text-decoration-line-through noir">9 000 €</span><br>8 200 €</a>
+                        <a href="/vehicule.html" class="white">ford explorer 2015 4wd</a>
                         <hr class="hr-gris">
                     </div>
                 </div>
@@ -195,7 +203,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn white bg-bleu w-auto little-title mt-5 text-uppercase p-3 ">Contactez nous</button>
+            <a class="btn white bg-bleu w-auto little-title mt-5 text-uppercase p-3" href="./contact.html">Contactez nous</a>
         </section>
         <div class="sec-fond2 py-5 p-lg-5">
             <section class="sec-color sec-jaune p-5 w-lg-50">

@@ -1,7 +1,19 @@
 @import url(./charte.css);
 
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.site-content {
+	flex: 1;
+}
 body {
     color: var(--noir);
+    margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +28,7 @@ p, a, ul, button {
 header {
     background: var(--noir);
 }
+
 
 .navbar-collapse{
     background: var(--blanc);
@@ -39,6 +52,14 @@ header {
 
 .gris {
     color: var(--gris);
+}
+
+.bg-gris {
+    background: var(--gris);
+}
+
+.bg-blanc {
+    background: var(--blanc);
 }
 
 .bg-noir {
@@ -81,13 +102,29 @@ header button {
     width: 100%;
 }
 
+.burger {
+    top: 30px;
+    right: 20px;
+}
+
+.img-contact {
+    background: url(./images/vehicule3.jpg);
+    background-size: cover; 
+    background-position: start; 
+    width: 100%; 
+    height: 40vh;
+    position: absolute;
+    z-index: -1;
+    max-height: 30vh;
+}
+
 .imgperson {
 
     height: auto;
 }
 
 .plusvoit-content {
-    height: 480px;
+    height: 450px;
     overflow: hidden;
     object-fit: cover;
 }
@@ -146,35 +183,6 @@ header button {
     font-size: 0.8rem;
 }
 
-@media screen and (min-width: 992px) {
-    .margintitle {
-        margin-top: 450px;
-        background: var(--noir);
-    }
-    main {
-        margin-top: 500px;
-    }
-    .margin-nav {
-        margin-top: 0;
-    }
-
-    .abso {
-        position: absolute;
-    }
-    .titles-lg {
-        font-size: 1.5rem;
-    }
-    .litlle-size {
-        font-size: 0.8rem;
-    }
-    .very-litlle-size {
-        font-size: 0.6rem;
-    }
-    .w-lg-50 {
-        width: 50%;
-    }
-    
-    }
 
 .sec-fond {
     background: no-repeat url(./images/img-fond.jpg);
@@ -203,3 +211,41 @@ header button {
     background-size: cover;
 
 }
+
+.margin-t {
+    margin-top: 100px;
+}
+
+.margin-t-xl {
+    margin-top: 200px;
+}
+
+@media screen and (min-width: 992px) {
+    .margintitle {
+        margin-top: 450px;
+        background: var(--noir);
+    }
+    .main {
+        margin-top: 500px;
+    }
+    .margin-nav {
+        margin-top: 0;
+    }
+
+    .abso {
+        position: absolute;
+    }
+    .titles-lg {
+        font-size: 1.5rem;
+    }
+    .litlle-size {
+        font-size: 0.8rem;
+    }
+    .very-litlle-size {
+        font-size: 0.6rem;
+    }
+    .w-lg-50 {
+        width: 50%;
+    }
+    
+    }
