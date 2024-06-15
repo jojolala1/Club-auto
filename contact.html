@@ -85,30 +85,31 @@
     <main class="site-content">
         <div class="container-fluid  d-flex  justify-content-center">
             <img class="img-contact ">
-            <form class=" bg-blanc p-5 margin-t mb-5  mx-2 mx-lg-5 d-flex row shadow">
+            <form action="https://api.web3forms.com/submit" method="post" class=" bg-blanc p-5 margin-t mb-5  mx-2 mx-lg-5 d-flex row shadow">
+                <input type="hidden" name="access_key" value="63ba280a-fd42-4e09-8b97-b0be83bc4b5c">
                 <h1 class="bold text-uppercase display-5 mb-5 col-12 ">Contactez nous</h1>
                 <div class="d-flex row col-lg-8 m-0 p-0">
                     <div class="mb-3 col-lg-6">
                         <label for="prenom" class="form-label">prénom*</label>
-                        <input type="text" class="form-control bg-gris rounded-0" id="prenom" placeholder="Entrez votre prénom">
+                        <input type="text" class="form-control bg-gris rounded-0" name='Prénom' id="prenom" placeholder="Entrez votre prénom">
                     </div>
                     <div class="mb-3 col-lg-6">
                         <label for="nom" class="form-label">Nom*</label>
-                        <input type="text" class="form-control bg-gris rounded-0" id="nom" placeholder="Entrez votre nom">
+                        <input type="text" class="form-control bg-gris rounded-0" name='Nom' id="nom" placeholder="Entrez votre nom">
                     </div>
                     <div class="mb-3 col-lg-6">
                         <label for="email" class="form-label">Email*</label>
-                        <input type="email" class="form-control bg-gris rounded-0" id="email" aria-describedby="emailHelp" placeholder="Entrez une adresse mail valide">
+                        <input type="email" class="form-control bg-gris rounded-0" name='Email' id="email" aria-describedby="emailHelp" placeholder="Entrez une adresse mail valide">
                     </div>
                     <div class="mb-3 col-lg-6">
                         <label for="number" class="form-label">Téléphone</label>
-                        <input type="number" class="form-control bg-gris rounded-0 " id="number"placeholder="Phone number" >
+                        <input type="number" name='Téléphone' class="form-control bg-gris rounded-0 " id="number"placeholder="Phone number" >
                     </div>
                 </div>
                 
                 <div class="mb-3 margin-t mt-lg-0 col-lg-4">
                     <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control bg-gris rounded-0 " id="exampleFormControlTextarea1" rows="7" placeholder="Ecrivez votre message"></textarea>
+                    <textarea class="form-control bg-gris rounded-0 " name='Message' id="exampleFormControlTextarea1" rows="7" placeholder="Ecrivez votre message"></textarea>
                 </div>
                 <button type="submit" class=" text-uppercase mt-3 bold btn btn-primary rounded py-3 px-5 bg-bleu border-0">Envoyer</button>
             </form>
