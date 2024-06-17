@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ma description personnalisée">
-    <link rel="stylesheet" href="reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="./script.js" defer></script>
     <title>Club Auto</title>
 </head>
 <body>
@@ -58,20 +58,20 @@
             <div class="col-12">
                
                         <div class="col-12 ">
-                            <nav class="navbar navbar-expand-lg p-0 shadow-sm position-absolute pt-4 pt-lg-0 w-100">
-                                <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
-                                    <ul class="navbar-nav margin-nav p-0  col-12 col-lg-3 ">
+                            <nav class="navbar navbar-expand-lg p-0 shadow-sm position-absolute pt-4 pt-lg-0 w-100 ">
+                                <div class="collapse navbar-collapse  justify-content-end bg-gris-opacity" id="navbarNav">
+                                    <ul class="navbar-nav margin-nav p-0  col-12 col-lg-3 bold ">
                                         <li class="mx-lg-2 mx-0 nav-item">
-                                            <a class="nav-link  " aria-current="page" href="./index.html">Accueil</a>
+                                            <a class="nav-link noir " aria-current="page" href="./index.html">Accueil</a>
                                         </li>
                                         <li class="nav-item  mx-lg-2 mx-0">
                                             <a class="nav-link active-orange" href="#">Vente</a>
                                         </li>
                                         <li class="nav-item  mx-lg-2 mx-0">
-                                            <a class="nav-link" href="#">Location</a>
+                                            <a class="nav-link noir" href="#">Location</a>
                                         </li>
                                         <li class="nav-item  mx-lg-2 mxg-0">
-                                            <a class="nav-link " href="/contact.html">Contact</a>
+                                            <a class="nav-link noir" href="/contact.html">Contact</a>
                                         </li>
 
                                     </ul>
@@ -82,32 +82,47 @@
             </div>
         </div>
     </header>
-    <main class="site-content px-4">
-        <p class="text-secondary text-uppercase little-title mt-5 mt-lg-0">Accueil / vente / bmw 535i, navi, leather, abs</p>
-        <hr>
+    <div class="px-4 px-lg-5">
+        <p class=" mt-lg-5 text-secondary text-uppercase little-title mt-5 mt-lg-0">Accueil / vente / bmw 535i, navi, leather, abs</p>
+    <hr>
+    </div>
+    
+    <main class="site-content px-4 px-lg-5 col-lg-8">
+        
         <h1 class="text-uppercase bold mt-5">bmw 535i, navi, leather, abs</h1>
-        <img src="./images/vehicule2.jpg" alt="BMW" class="img-fluid">
-        <nav class="navbar navbar-expand ">
-            <div class="collapse navbar-collapse  justify-content-end " id="navbarNav">
-                <ul class="navbar-nav  p-0  col-12 col-lg-3 ">
+        <img src="./images/vehicule2.jpg" alt="BMW" class="img-fluid mb-5">
+        <nav class=" navbar navbar-expand-lg text-center bold">
+            <div class=" navbar-collapse bg-noir" >
+                <ul class="navbar-nav  p-0  col-12 col-lg-3 listener-ul">
                     <li class="nav-item  mx-lg-2 mx-0">
-                        <a class="nav-link active-orange " aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link active-white white" aria-current="page" href="#descr">Description</a>
+                    </li>
+                    <li class="nav-item  mx-lg-2 mx-0 ">
+                        <a class="nav-link white" href="#technique">Technique</a>
                     </li>
                     <li class="nav-item  mx-lg-2 mx-0">
-                        <a class="nav-link" href="./vehicule.html">Vente</a>
+                        <a class="nav-link white" href="#options">Options</a>
                     </li>
                     <li class="nav-item  mx-lg-2 mx-0">
-                        <a class="nav-link" href="#">Location</a>
-                    </li>
-                    <li class="nav-item  mx-lg-2 mx-0">
-                        <a class="nav-link" href="./contact.html">Contact</a>
+                        <a class="nav-link white" href="./contact.html">Contact</a>
                     </li>
 
                 </ul>
             </div>
         </nav>
+        <p class="litlle-size mt-5" id="descr" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, inventore voluptatum laborum architecto voluptates nisi iure. Ad sapiente reiciendis beatae fugiat, cumque eius numquam adipisci ea, aut cum illum reprehenderit?</p>
+        <p class="little-p" id="technique">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, qui minus animi recusandae inventore suscipit porro officia voluptatibus praesentium commodi rerum explicabo exercitationem deleniti est facere ab nobis minima iusto sequi soluta! Porro recusandae magnam incidunt illum fuga quaerat nemo ea tempora a obcaecati beatae repellendus impedit, perspiciatis inventore architecto! Sed tenetur autem architecto ad obcaecati soluta iusto explicabo sunt officia! Adipisci illo deleniti obcaecati pariatur vel nulla a harum delectus explicabo asperiores doloribus repellendus maxime, vitae tempora? Ex cupiditate tempore inventore deleniti, dolores neque earum? Ea non, aut dolorem magni sunt, recusandae mollitia ad sed suscipit quos unde inventore.</p>
+        <p class="little-p border-l-custom ps-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officia aut consequatur omnis dicta, vitae, facilis ex porro laudantium quos adipisci repellendus aspernatur sed eius? Voluptatum, vero. Ipsa, quia sapiente!</p>
+        <p class="little-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt inventore a nostrum magni tempore itaque delectus corrupti laborum. Molestias earum et inventore, quae minus quam quisquam corporis eum quaerat!</p>
+        <ul class="mt-4 mb-5" id="options">
+            <h2 class="text-uppercase bold h4">Options</h2>
+            <li class="mb-2 little-p"><i class="bi bi-check white  rounded-circle bg-orange me-3 little-icon"></i>Lorem ipsum dolor sit amet.</li>
+            <li class="mb-2 little-p"><i class="bi bi-check white  rounded-circle bg-orange me-3 little-icon"></i>Lorem ipsum dolor sit amet.</li>
+            <li class="mb-2 little-p"><i class="bi bi-check white  rounded-circle bg-orange me-3 little-icon"></i>Lorem ipsum dolor sit amet.</li>
+            <li class="mb-2 little-p"><i class="bi bi-check white  rounded-circle bg-orange me-3 little-icon"></i>Lorem ipsum dolor sit amet.</li>
+        </ul>
     </main>
-    <footer class="bg-noir p-5  " >
+    <footer class="bg-noir p-5  mt-5" >
         <div class="mx-lg-5 d-flex flex-column flex-lg-row row px-lg-5 justify-content-center">
             <section class=" mb-4 col-lg-6 col-xl-3 ">
                 <h4 class=" bold white text-uppercase litlle-size"><span class="blue">club</span> Auto</h4>

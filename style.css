@@ -14,6 +14,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,6 +30,13 @@ header {
     background: var(--noir);
 }
 
+nav {
+    z-index: 1;
+}
+
+ul {
+    list-style-type:none;
+}
 
 .navbar-collapse{
     background: var(--blanc);
@@ -78,6 +86,10 @@ header {
     background:rgb(56, 56, 56);
 }
 
+.bg-gris-opacity {
+    background-color: #eceff3be;
+}
+
 
 header button {
     color: var(--bleu);
@@ -108,7 +120,6 @@ header button {
 }
 
 .img-contact {
-    background: url(./images/vehicule3.jpg);
     background-size: cover; 
     background-position: start; 
     width: 100%; 
@@ -129,23 +140,16 @@ header button {
     object-fit: cover;
 }
 
-.margintitle {
-    background: var(--noir);
-}
-
-
 .active-orange {
     background: var(--orange);
     color: var(--blanc);
 }
 
-
-.titles {
-    font-size: 2.4rem;
-}
-
-.bold {
-    font-weight: 700;
+.active-white {
+    background: var(--blanc);
+    color: var(--noir);
+    border-top: 3px var(--orange) solid;
+    margin:-3px 3px 0;
 }
 
 .custom-hr {
@@ -153,10 +157,6 @@ header button {
     height: 2px;
     background-color: #CC6119; /* Couleur personnalisée */
     margin: 2rem 0; 
-}
-
-.margin-nav {
-    margin-right: 150px;
 }
 
 .height-price {
@@ -171,8 +171,24 @@ header button {
     width: 30px;
 }
 
+.margintitle {
+    background: var(--noir);
+}
+
+.margin-nav {
+    margin-right: 150px;
+}
+
 .margin-b {
     margin-bottom:60px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.titles {
+    font-size: 2.4rem;
 }
 
 .little-title {
@@ -183,10 +199,19 @@ header button {
     font-size: 0.8rem;
 }
 
+.border-l-custom {
+    border-left: #CC6119 solid 3px;
+}
+
+.little-icon {
+    font-size: 0.6rem;
+}
+
 
 .sec-fond {
     background: no-repeat url(./images/img-fond.jpg);
-    padding: 10px 0 10px 0 ;
+    padding: 10px 0 ;
+    margin: 0;
 }
 
 .sec-fond img {
@@ -247,5 +272,4 @@ header button {
     .w-lg-50 {
         width: 50%;
     }
-    
-    }
+}
